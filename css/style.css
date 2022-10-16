@@ -1,0 +1,223 @@
+/* all pages*/
+
+body {
+    text-align: center;
+    font-family:'Ostrich Sans', sans-serif;
+    background-image: url("/img/pexels-steve-johnson-1843717.jpg");
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    font-size: 30px;
+    text-decoration-color: orangered;
+   
+}
+
+nav a {
+    padding-top: 2em;
+    width: 5%;
+    margin-right: 2em;
+    text-decoration: solid;
+}
+
+nav h1{
+    margin-left: 1em; 
+}
+
+a:hover {
+    color: lightcoral;
+
+}
+
+
+/* homepage */
+
+.home-maincontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+   
+
+}
+
+.home-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    
+
+}
+.home-profile img{
+    max-width: 30px;
+}
+
+
+.home-pic {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 5%;
+    border-radius: 10%;
+}
+
+.home-pic img {
+    border-radius: 10%;
+}
+
+.home-profile a{
+    display: flex;
+    margin-left: 10%;
+    align-items: flex-start;
+}
+
+/* cv-page */
+
+.cv-main-title{
+    padding: 7%;
+    background-color: lightgrey;
+    margin-left: 5%;
+}
+
+.cv-title {
+    background-color: lightgrey;
+    margin-left: 5%;
+}
+
+.text{
+    border: solid black;
+    border-radius: 1em;
+    margin: 15%;
+    padding: 3%;
+}
+.cv-maincontainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.cv-profile-text {
+    align-items: flex-start;
+    min-width: 5em;
+    padding: 5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.cv-subcontainer2{
+    background-color: lightgrey;
+}
+
+.cv-pic {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 10%;
+    border-radius: 10%;
+    padding: 10px;
+    
+
+}
+p{
+    font-size: 20px;
+
+}
+
+.cv-pic img {
+    border-radius: 10%;
+
+}
+
+/* about */
+
+.about-maincontainer {
+    display: flex;
+    justify-content: center;
+}
+
+.about-wrapper{
+    justify-content: flex-end;
+    display: flex;
+   
+
+}
+
+.about-subcontainer1 {
+    font-size: 50px;
+    background-color: lightgrey;
+    display: flex;
+    align-items:flex-end;
+}
+
+
+.about-subcontainer2 {
+    display: flex;
+    margin-top: 50px;
+    font-size: 15px;
+    flex-direction: column;
+    padding: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    
+}
+
+.about-pic {
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    border-radius: 10%;
+    padding: 3%
+
+}
+
+/* portfolio */
+
+.portfolio-maincontainer{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 30%;
+    text-decoration: none;
+}
+
+.portfolio-maincontainer a {
+    text-decoration: none;
+}
+
+.portfolio-maincontainer a:hover {
+    text-decoration: underline;
+    color:white;
+}
+
+.card {
+    display: flex;
+    width: 30%;
+    padding: 3%;
+    color: black;
+    background-color: lightgrey;
+    border-radius:20% ;
+}
+
+
+.card p{
+    font-size: 15px;
+}
+.row-1{
+    margin-left: 5%;
+}
+
+.row-2{
+    display: flex;
+    justify-content: flex-end;
+}
+.row-3{
+    display: flex;
+    margin-left: 13%;
+}
+
