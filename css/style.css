@@ -2,12 +2,16 @@
 
 body {
     text-align: center;
-    font-family:'Ostrich Sans', sans-serif;
+    font-family: 'Ostrich Sans', sans-serif;
     background-image: url("/img/pexels-steve-johnson-1843717.jpg");
     background-size: cover;
     margin-left: 10%;
     margin-right: 10%;
 
+}
+
+.active{
+    font-weight: 900;
 }
 
 nav {
@@ -17,18 +21,38 @@ nav {
     background-color: white;
     font-size: 30px;
     text-decoration-color: orangered;
-   
 }
+
+@media only screen and (max-width: 500px){
+    .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    nav {
+    justify-content: center;
+    padding: 20px;
+    }
+
+    nav h1{
+    display: none;
+    }
+
+    nav a {
+    margin-bottom: 8px;
+    text-decoration: solid;
+    }
+}
+
 
 nav a {
-    padding-top: 2em;
-    width: 5%;
-    margin-right: 2em;
     text-decoration: solid;
+    margin-right: 16px;
 }
 
-nav h1{
-    margin-left: 1em; 
+nav h1 {
+    margin-left: 1em;
 }
 
 a:hover {
@@ -43,8 +67,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     justify-content: left;
-   
-
 }
 
 .home-profile {
@@ -52,10 +74,11 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     margin-left: 10%;
-    
+
 
 }
-.home-profile img{
+
+.home-profile img {
     max-width: 30px;
 }
 
@@ -74,15 +97,37 @@ a:hover {
     border-radius: 10%;
 }
 
-.home-profile a{
+.home-profile a {
     display: flex;
     margin-left: 10%;
     align-items: flex-start;
 }
 
+@media only screen and (max-width: 500px){
+    .home-maincontainer {
+        flex-direction: column;
+    }
+
+    .home-pic {
+        margin-left: 5%;
+    }
+
+    .home-profile {
+        margin-bottom: 20%;
+    }
+    
+    .home-profile a {
+        margin-left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+
 /* cv-page */
 
-.cv-main-title{
+.cv-main-title {
     padding: 7%;
     background-color: lightgrey;
     margin-left: 5%;
@@ -93,12 +138,13 @@ a:hover {
     margin-left: 5%;
 }
 
-.text{
+.text {
     border: solid black;
     border-radius: 1em;
     margin: 15%;
     padding: 3%;
 }
+
 .cv-maincontainer {
     display: flex;
     flex-direction: row-reverse;
@@ -110,7 +156,8 @@ a:hover {
     padding: 5%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.cv-subcontainer2{
+
+.cv-subcontainer2 {
     background-color: lightgrey;
 }
 
@@ -121,16 +168,36 @@ a:hover {
     margin: 10%;
     border-radius: 10%;
     padding: 10px;
-    
+
 
 }
-p{
+
+p {
     font-size: 20px;
 
 }
 
 .cv-pic img {
     border-radius: 10%;
+
+}
+@media only screen and (max-width: 500px){
+
+    .cv-maincontainer{
+        flex-direction: column;
+
+    }
+    .cv-maincontainer h3{
+        font-size: 12px;
+    }
+    .cv-pic{
+        max-width: 100px;
+    }
+
+    .cv-main-title{
+        padding: 1%;
+    }
+
 
 }
 
@@ -141,10 +208,10 @@ p{
     justify-content: center;
 }
 
-.about-wrapper{
+.about-wrapper {
     justify-content: flex-end;
     display: flex;
-   
+
 
 }
 
@@ -152,7 +219,7 @@ p{
     font-size: 50px;
     background-color: lightgrey;
     display: flex;
-    align-items:flex-end;
+    align-items: flex-end;
 }
 
 
@@ -164,7 +231,7 @@ p{
     padding: 50px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
-    
+
 }
 
 .about-pic {
@@ -173,12 +240,43 @@ p{
     max-width: 250px;
     border-radius: 10%;
     padding: 3%
+}
 
+@media only screen and (max-width: 1250px) {
+    .about-pic {
+        width: 30%;
+
+    }
+
+    .about-maincontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .about-subcontainer1 {
+        padding: 0px;
+        margin-top: 0px;
+        width: 100%;
+        font-size:30px;
+
+    }
+    .about-subcontainer2 {
+        padding: 0px;
+        margin-top: 0px;
+        width: 100%;
+        
+
+    }
+    .about-subcontainer2 p{
+        font-size:15px;
+    }
 }
 
 /* portfolio */
 
-.portfolio-maincontainer{
+.portfolio-maincontainer {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -192,7 +290,7 @@ p{
 
 .portfolio-maincontainer a:hover {
     text-decoration: underline;
-    color:white;
+    color: white;
 }
 
 .card {
@@ -201,23 +299,38 @@ p{
     padding: 3%;
     color: black;
     background-color: lightgrey;
-    border-radius:20% ;
+    border-radius: 20%;
 }
 
 
-.card p{
+.card p {
     font-size: 15px;
 }
-.row-1{
+
+.row-1 {
     margin-left: 5%;
 }
 
-.row-2{
+.row-2 {
     display: flex;
     justify-content: flex-end;
 }
-.row-3{
+
+.row-3 {
     display: flex;
     margin-left: 13%;
 }
 
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 75%;
+        margin-left: 1%;
+        margin-right: 30%;
+    }
+
+    .portfolio-maincontainer {
+        margin-left: 1%;
+    }
+
+
+}
