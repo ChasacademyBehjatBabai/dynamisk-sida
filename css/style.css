@@ -22,6 +22,11 @@ nav {
     font-size: 30px;
     text-decoration-color: orangered;
 }
+#modal-button{
+    background-color: white;
+
+
+}
 
 @media only screen and (max-width: 500px){
     .menu {
@@ -97,11 +102,6 @@ a:hover {
     border-radius: 10%;
 }
 
-.home-profile a {
-    display: flex;
-    margin-left: 10%;
-    align-items: flex-start;
-}
 
 @media only screen and (max-width: 500px){
     .home-maincontainer {
@@ -188,10 +188,15 @@ p {
 
     }
     .cv-maincontainer h3{
-        font-size: 12px;
+        font-size: 20px;
     }
+
     .cv-pic{
         max-width: 100px;
+    }
+
+    .cv-maincontainer p {
+        font-size: 14px;
     }
 
     .cv-main-title{
@@ -300,25 +305,29 @@ p {
     color: black;
     background-color: lightgrey;
     border-radius: 20%;
+    margin-bottom: 10px;
 }
 
 
 .card p {
-    font-size: 15px;
+    font-size: 20px;
+    padding-left: 6px;
 }
 
 .row-1 {
-    margin-left: 5%;
+    margin-left: 10%;
 }
 
 .row-2 {
-    display: flex;
-    justify-content: flex-end;
+    margin-left: 20%;
 }
 
 .row-3 {
-    display: flex;
-    margin-left: 13%;
+    margin-left: 10%;
+}
+
+.row-4{
+    margin-left:18%;
 }
 
 @media only screen and (max-width: 768px) {
